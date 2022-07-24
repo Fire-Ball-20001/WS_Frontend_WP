@@ -23,6 +23,7 @@ export function TitleSection({
 function loadAnimation(elem:HTMLElement ,anim: string) {
   const id = Math.ceil(Math.random()*1000);
   const animation = `anim-${id} 1s ${anim.split(' ')[0]} forwards`;
+
   anim = anim.replace(`${anim.split(' ')[0]} `,'');
   addKeyframes(id.toString() ,anim);
   elem.setAttribute("anim",animation);
@@ -30,25 +31,29 @@ function loadAnimation(elem:HTMLElement ,anim: string) {
 
 export function startAnimation(elem: HTMLElement) {
   const img = elem.getElementsByTagName("img")[0];
+
   img.style.animation=img.getAttribute("anim") as string;
 }
 
 export function endAnimation(elem: HTMLElement) {
   const img = elem.getElementsByTagName("img")[0];
+
   img.style.animation="";
 }
 
 function addKeyframes(id: string,animation: string) {
+
   if(!animStyles) {
   animStyles = document.createElement("style");
   document.head.appendChild(animStyles);
   }
+
   const keyframe: string = `
   @keyframes anim-${id} {
     100% {
       transform: ${animation};
     }
-  }
-  `;
+  }`;
+  
   animStyles.sheet?.insertRule(keyframe,animStyles.sheet.cssRules.length);
 }

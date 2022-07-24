@@ -1,7 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Carousel } from "./carousel/carousel";
-import { SectionElem } from "./section/linkSection";
 import "../styles/local_styles.scss";
 import data from "../assets/src-data.json";
 
