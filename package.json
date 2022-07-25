@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "build": "npx webpack",
-    "start": "npx webpack -w"
+    "start": "npx webpack serve --open"
   },
   "repository": {
     "type": "git",
