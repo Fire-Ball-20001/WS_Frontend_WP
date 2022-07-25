@@ -21,7 +21,7 @@ export function TitleSection({
 }
 
 function loadAnimation(elem:HTMLElement ,anim: string) {
-  const id = Math.ceil(Math.random()*1000);
+  const id = Math.ceil(Math.random() * 1000);
   const animation = `anim-${id} 1s ${anim.split(' ')[0]} forwards`;
 
   anim = anim.replace(`${anim.split(' ')[0]} `,'');
@@ -32,7 +32,7 @@ function loadAnimation(elem:HTMLElement ,anim: string) {
 export function startAnimation(elem: HTMLElement) {
   const img = elem.getElementsByTagName("img")[0];
 
-  img.style.animation=img.getAttribute("anim") as string;
+  img.style.animation = img.getAttribute("anim") as string;
 }
 
 export function endAnimation(elem: HTMLElement) {

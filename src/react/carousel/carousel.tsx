@@ -31,18 +31,11 @@ function switchBlock(side: "left" | "right", id: string) {
     }
 
     const sizeSection = 112;
-    const countElement = (allSizeSection+10) / sizeSection;
-    let znak:number;
+    const countElement = (allSizeSection + 10) / sizeSection;
+    let mark = side === 'right' ? -1 : 1;
 
-    if(side === 'right') {
-        znak = -1;
-    }
-    else {
-        znak = 1;
-    }
-
-    if(Math.abs(delta) == sizeSection*countElement) {
-        if(delta>0) {
+    if(Math.abs(delta) == sizeSection * countElement) {
+        if(delta > 0) {
             delta = sizeSection;
         }
         else
@@ -57,7 +50,7 @@ function switchBlock(side: "left" | "right", id: string) {
 
 
     } else {
-        delta = delta + znak*sizeSection;
+        delta = delta + mark * sizeSection;
     }
 
     if (startElement === null) {
@@ -66,7 +59,7 @@ function switchBlock(side: "left" | "right", id: string) {
     }
 
     if(side === 'left') {
-        if(delta>0) {
+        if(delta > 0) {
             (endElement as HTMLElement).style.transform = `translateX(${-sizeSection*countElement}px)`;
         }
         else {
@@ -74,7 +67,7 @@ function switchBlock(side: "left" | "right", id: string) {
         }
     }
     else {
-        if(delta<0) {
+        if(delta < 0) {
             (startElement as HTMLElement).style.transform = `translateX(${sizeSection*countElement}px)`;
         }
         else {
