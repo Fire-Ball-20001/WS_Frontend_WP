@@ -14,7 +14,7 @@ export function TitleSection({
 }) {
   return (
     <div className="section__title title">
-      <img className="title__image title-img" src={img} onLoad={(elem) => {loadAnimation(elem.currentTarget,animation)}} alt="Image" />
+      <img className="title__image title-img" src={img} onLoad={(elem) => loadAnimation(elem.currentTarget,animation)} alt="Image" />
       <p className="title__text title-text">{title}</p>
     </div>
   );

@@ -16,12 +16,8 @@ export function LinkSection({ params }: { params: SectionElem }) {
   return (
     <section
       className="carousel__section section"
-      onMouseEnter={(event) => {
-        startAnimation(event.currentTarget);
-      }}
-      onMouseLeave={(event) => {
-        endAnimation(event.currentTarget);
-      }}
+      onMouseEnter={(event) => startAnimation(event.currentTarget)}
+      onMouseLeave={(event) => endAnimation(event.currentTarget)}
       style={{ backgroundImage: `url(${params.fon})`}}
     >
       <TitleSection

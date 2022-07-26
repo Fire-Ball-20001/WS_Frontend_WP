@@ -4,7 +4,7 @@ import { Carousel } from "./carousel/carousel";
 import "../styles/local_styles.scss";
 import data from "../assets/src-data.json";
 
-function App({ title }: { title: string }) {
+function App() {
   return (
     <main className="main">
       <Carousel objects={data} />
@@ -13,4 +13,4 @@ function App({ title }: { title: string }) {
 }
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
-root.render(<App title={"Hello React"} />);
+root.render(<App />);
