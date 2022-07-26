@@ -12,13 +12,14 @@ export interface SectionElem {
     animation: string;
 }
 
-export function LinkSection({ params }: { params: SectionElem }) {
+export function LinkSection({ params, order }: { params: SectionElem, order: number }) {
   return (
     <section
       className="carousel__section section"
-      onMouseEnter={(event) => startAnimation(event.currentTarget)}
-      onMouseLeave={(event) => endAnimation(event.currentTarget)}
-      style={{ backgroundImage: `url(${params.fon})`}}
+      onMouseEnter={event => startAnimation(event.currentTarget)}
+      onMouseLeave={event => endAnimation(event.currentTarget)}
+      style={{ backgroundImage: `url(${params.fon})`, order}} 
+      
     >
       <TitleSection
         title={params.title}
