@@ -41,7 +41,7 @@ function testSwitchBlock(side: "left" | "right", id: string) {
     element.style.order = newOrder.toString();
   })
 }
-
+/* TODO Old Carousel
 function switchBlock(side: "left" | "right", id: string) {
     const wrapper = document.getElementById(id) as HTMLElement;
 
@@ -104,3 +104,4 @@ function swapStartAndEndElement(side: "left" | "right", elements: HTMLCollection
     startElement = nextStart as HTMLElement;
     endElement = nextEnd as HTMLElement;
 }
+*/
