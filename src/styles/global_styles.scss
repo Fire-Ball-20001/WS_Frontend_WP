@@ -1,0 +1,14 @@
+%reset-style {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  @extend %reset-style;
+}

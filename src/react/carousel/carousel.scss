@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+%page-button {
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #aaa;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.page-button-r {
+  @extend %page-button;
+
+  right: 15px;
+}
+
+.page-button-l {
+  @extend %page-button;
+
+  left: 15px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  width: min-content;
+}
+
+.body-carousel {
+  border: 2px solid #888;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  overflow: hidden;
+  width: $count-items-in-carousel * ($width-section + 2) + ($count-items-in-carousel - 1) * $indent-sections;
+}
+
+.body-wrapper {
+  display: flex;
+  gap: $indent-sections $indent-sections;
+  justify-content: start;
+  z-index: -1;
+  transition: all 0.6s ease, -webkit-transform 0.3s ease;
+}

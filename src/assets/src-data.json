@@ -1,0 +1,42 @@
+[
+    {
+        "animation": "infinite rotate(360deg)",
+        "buttonColor": "#aaaaff",
+        "fon": "assets/backgrounds/background-3.jpg",
+        "img": "assets/images/react-logo.svg",
+        "link": "https://ru.reactjs.org/",
+        "title": "React"
+    },
+    {
+        "animation": "1 scale(1.3,1.3)",
+        "buttonColor": "#fff",
+        "fon": "assets/backgrounds/background-2.jpg",
+        "img": "assets/images/webpack-logo.svg",
+        "link": "https://webpack.js.org/",
+        "title": "Webpack"
+    },
+    {
+        "animation": "1 scale(1.3,1.3)",
+        "buttonColor": "#fff",
+        "fon": "assets/backgrounds/background-1.jpg",
+        "img": "assets/images/sass-logo.svg",
+        "link": "https://sass-scss.ru/",
+        "title": "Sass"
+    },
+    {
+        "animation": "1 scale(1.3,1.3)",
+        "buttonColor": "#fff",
+        "fon": "assets/backgrounds/background-4.jpg",
+        "img": "assets/images/sass-logo.svg",
+        "link": "https://sass-scss.ru/",
+        "title": "Sass"
+    },
+    {
+        "animation": "1 scale(1.3,1.3)",
+        "buttonColor": "#fff",
+        "fon": "assets/backgrounds/background-3.jpg",
+        "img": "assets/images/sass-logo.svg",
+        "link": "https://sass-scss.ru/",
+        "title": "Sass"
+    }
+]
